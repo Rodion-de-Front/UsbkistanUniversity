@@ -5,15 +5,14 @@ let overlay = document.getElementById('overlay');
 
 
 
-// function qweqwe() {
-//     clearInterval(qweqwe);
+function qweqwe() {
 
-//     qweqwe = setInterval(function() {
-//         next();
-//     }, 3000);
-// }
+    qweqwe = setInterval(function() {
+        next();
+    }, 3000);
+}
 
-// qweqwe();
+qweqwe();
 
 
 // let timer = setInterval(function(){
@@ -55,6 +54,8 @@ function next() {
         }
 
     }
+
+    qweqwe();
 }
 
 function previous() {
