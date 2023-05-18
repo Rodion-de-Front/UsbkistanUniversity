@@ -3,11 +3,24 @@ let container = document.getElementById('container');
 let content = document.getElementById('content');
 let overlay = document.getElementById('overlay');
 
-setInterval(function(){
 
-    next();
 
-}, 7000);
+// function qweqwe() {
+//     clearInterval(qweqwe);
+
+//     qweqwe = setInterval(function() {
+//         next();
+//     }, 3000);
+// }
+
+// qweqwe();
+
+
+// let timer = setInterval(function(){
+
+//     next();
+
+// }, 3000);
 
 function next() {
 
