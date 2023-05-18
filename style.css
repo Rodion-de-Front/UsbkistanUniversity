@@ -483,6 +483,13 @@ nav a:hover:after {
         font-size: 10px;
         font-weight: bold;
         transition: 0.2s ease color;
-      }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        word-spacing: 30px;
+        background-color: #0f0e0f;
+    }
 
 }
