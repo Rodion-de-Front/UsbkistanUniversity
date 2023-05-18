@@ -252,10 +252,6 @@ nav a:hover:after {
     margin-top: 30px;
 }
 
-.title {
-    margin-left: 160px;
-}
-
 .info-box {
     font-size: 14px;
     padding: 15px;
@@ -331,6 +327,7 @@ nav a:hover:after {
     position: relative;
     text-align: center;
     word-spacing: 40px;
+    background-color: #0f0e0f;
   }
 
   .container .btn {
@@ -375,6 +372,21 @@ nav a:hover:after {
     top: -10%;
   }
 
+  #menu {
+    z-index: 1;
+}
+
+  #menu img{
+    height: 30px;
+    width: 30px;
+  }
+
+  #list {
+    position: absolute;
+    right: -300px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   @keyframes onHover {
     0% {
       left: -110%;
@@ -390,12 +402,7 @@ nav a:hover:after {
     }
   }
 
-  #contacts {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #0f0e0f;
-  }
+
 
 @media (max-width: 800px) {
 
@@ -406,5 +413,76 @@ nav a:hover:after {
     .info-box {
         width: 600px;
     }
+
+    .box-classes{
+        width: 250px;
+    }
+
+    .box-classes video{
+        width: 250px;
+    }
+
+    .row-info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .information {
+        margin: 0;
+    }
+
+    .main {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .diplom {
+        font-size: 25px;
+        line-height: 40px;
+        top: 60%;
+        left: 40%;
+    }
+
+    .exam {
+        font-size: 25px;
+        line-height: 35px;
+        top: 50%;
+        left: 40%;
+    }
+
+    .campus {
+        font-size: 30px;
+        top: 80%;
+        left: 40%;
+        line-height: 40px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        z-index: 1;
+        margin-right: 0;
+        display: inline-block;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    nav a {
+        position: relative;
+        width: 20px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        transition: 0.2s ease color;
+      }
 
 }

@@ -91,3 +91,24 @@ function previous() {
 
     }
 }
+
+function open() {
+    alert('sdvsv')
+    document.getElementById('list').style.Right = "0";
+}
+
+console.log(window. innerWidth)
+
+// if (window. innerWidth < 900) {
+//     document.querySelector('nav').innerHTML = `
+//             <div id="menu" onclick=open()>
+//                 <img class="lines" src="img/lines.png">
+//                 <ul id="list">
+//                     <li><a href="#">Home</a></li>
+//                     <li><a href="#">About</a></li>
+//                     <li><a href="#">Info</a></li>
+//                     <li><a href="#">Contact</a></li>
+//                 </ul>
+//            </div>`;
+// }
+
