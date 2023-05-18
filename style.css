@@ -488,7 +488,7 @@ nav a:hover:after {
     .container {
         position: relative;
         text-align: center;
-        word-spacing: 30px;
+        word-spacing: 20px;
         background-color: #0f0e0f;
     }
 
