@@ -272,6 +272,11 @@ nav a:hover:after {
     padding: 15px;
 }
 
+.box-classes img {
+    width: 340px;
+    height: 270px;
+}
+
 .title {
     text-align: center;
 }
@@ -538,6 +543,11 @@ nav a:hover:after {
     word-spacing: 30px;
     padding: 10px;
     background-color: #0f0e0f;
-}
+    }
+
+    .box-classes img {
+        width: 280px;
+        height: 200px;
+    }
 
 }
