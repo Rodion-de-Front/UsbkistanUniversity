@@ -15,12 +15,13 @@
                 <img src="img/logo.png"/>
             </div>
             <nav>
-                <a href="#">HOME</a> <span>|</span>
-                <a href="#">ABOUT</a> <span>|</span>
-                <a href="#">CLASSES</a> <span>|</span>
-                <a href="#">PRICE</a> <span>|</span>
-                <a href="#">CONTACT</a> <span>|</span>
-                <div id="indicator"></div>
+                <a class="option" href="#container">HOME</a> <span>|</span>
+                <a class="option" href="#INFO">INFO</a> <span>|</span>
+                <a class="option" href="#Gallery">GALLERY</a> <span>|</span>
+                <a class="option" href="#Classes">CLASSES</a> <span>|</span>
+                <a class="option" href="#Partners">PARTNERS</a> <span>|</span>
+                <!-- <a class="option" href="#About">ABOUT</a> <span>|</span> -->
+                <a class="option" href="#Contact">CONTACT</a> <span>|</span>
             </nav>
         </div>
         <div id="content">
@@ -34,7 +35,7 @@
         <img src="img/str.png" class="right" onclick="next()"/>
     </div>
     <div class="paper">
-        <div class="row">
+        <div id="INFO" class="row">
             <div class="box">
                 <div class="icon">
                     <img src="img/1.png" alt="" />
@@ -72,45 +73,103 @@
                 <p><a href="#">Read More</a></p>
             </div>
         </div>
-            <div class="classes">
-                <h2 class="title">New Classes</h2>
-                <div class="row-classes">
-                    <div class="box-classes">
-                        <video width="340" controls="controls" poster="img/news2.jpg">
-                            <source src="https://www.youtube.com/watch?v=s-xc-nL_llM">
-                        </video>
-                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/s-xc-nL_llM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                        <h4>Frontend - development</h4>
-                        <div>Duration: 3 month</div>
-                        <div>Hours: 72 hours</div>
-                        <div>Technologies: HTML, CSS, JavaScript, AJAX, HTTP, API</div>
-                        <div>Projects: Landing page, SPA, Telegram bot</div>
+        <div id = "Gallery">
+            <h2 class="title">GALLERY</h2>
+            <div class="gallery">
+                <img src="img/g1.jpg"/>
+                <img src="img/g2.jpg"/>
+                <img src="img/g3.jpg"/>
+                <img src="img/g4.jpg"/>
+                <img src="img/g5.jpg"/>
+                <img src="img/g6.jpg"/>
+                <img src="img/g7.jpg"/>
+                <img src="img/g8.jpg"/>
+                <img src="img/g9.jpg"/>
+            </div>
+        </div>
+        <div id="Classes">
+            <h2 class="title">CLASSES</h2>
+            <div class="row-classes">
+                <div class="box-classes">
+                    <img width="340" height="270px" src="img/front.png"/>
+                    <h4><strong>Frontend - development</strong></h4>
+                    <div class="skills">
+                        <div><strong>Duration:</strong> 3 month</div>
+                        <div><strong>Hours:</strong> 72 hours</div>
+                            <div>
+                                <strong>Technologies:</strong>
+                                    <div>- HTML</div>
+                                    <div>- CSS</div>
+                                    <div>- JavaScript</div>
+                                    <div>- AJAX</div>
+                                    <div>- HTTP</div>
+                                    <div>- API</div>
+                            </div>
+                            <div>
+                                <strong>Projects:</strong>
+                                <div>- Landing page</div>
+                                <div>- SPA</div>
+                                <div>- Telegram bot</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="box-classes">
-                        <video width="340" controls="controls" poster="img/news3.jpg">
-                            <source src="https://www.youtube.com/watch?v=s-xc-nL_llM">
-                        </video>
+                        <img width="340" height="270px" src="img/back.png"/>
                         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/s-xc-nL_llM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                        <h4>Backend - development</h4>
-                        <div>Duration: 3 month</div>
-                        <div>Hours: 72 hours</div>
-                        <div>Technologies: PHP, Golang, MySQL, HTTP, API, Docker</div>
-                        <div>Projects: Telegram bot, eShop, Agile taskboard</div>
+                        <h4><strong>Backend - development</strong></h4>
+                        <div class="skills">
+                            <div><strong>Duration:</strong> 3 month</div>
+                            <div><strong>Hours:</strong> 72 hours</div>
+                            <div>
+                                <strong>Technologies:</strong>
+                                    <div>- PHP</div>
+                                    <div>- Golang</div>
+                                    <div>- MySQL</div>
+                                    <div>- HTTP</div>
+                                    <div>- API</div>
+                                    <div>- Docker</div>
+                            </div>
+                            <div>
+                                <strong>Projects:</strong>
+                                <div>- Agile taskboard</div>
+                                <div>- eShop</div>
+                                <div>- Telegram bot</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="box-classes">
-                        <video width="340" controls="controls" poster="img/news4.jpg">
-                            <source src="https://www.youtube.com/watch?v=s-xc-nL_llM">
-                        </video>
-                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/s-xc-nL_llM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                        <h4>QA - Engineer</h4>
-                        <div>Duration: 3 month</div>
-                        <div>Hours: 72 hours</div>
-                        <div>Technologies: HTML, CSS, JavaScript, HTTP, API, SQL</div>
-                        <div>Projects: Testing eShop</div>
+                        <img width="340" height="270px" src="img/qa.png"/>
+                        <h4><strong>QA - Engineer</strong></h4>
+                        <div class="skills">
+                            <div><strong>Duration:</strong> 3 month</div>
+                            <div><strong>Hours:</strong> 72 hours</div>
+                            <div>
+                                <strong>Technologies:</strong>
+                                    <div>- HTML</div>
+                                    <div>- CSS</div>
+                                    <div>- JavaScript</div>
+                                    <div>- HTTP</div>
+                                    <div>- API</div>
+                                    <div>- SQL</div>
+                            </div>
+                            <div>
+                                <strong>Projects:</strong>
+                                <div>- Testing eShop</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+        </div>
+        <div id="Partners">
+            <h2 class="title">OUR PARTNERS</h2>
+            <div class="partners">
+                <img src="img/p1.png"/>
+                <img src="img/p2.png"/>
+                <img src="img/p3.png"/>
+                <img src="img/p4.png"/>
             </div>
-        <div class="row-info">
+        </div>
+        <!-- <div id="About" class="row-info">
             <div class="info-box info1">
                 <h2>About Us</h2>
                 <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p><p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
@@ -130,34 +189,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
+    </div> -->
+    <div id="Contact" class="footer">
         <div class="foot">
             <div class="information">
                 <h2>Course Categories</h2>
                 <ul>
-                    <li><a href="#">List of Technology</a></li>
-                    <li><a href="#">List of Business</a></li>
-                    <li><a href="#">List of Photography</a></li>
-                    <li><a href="#">List of Language</a></li>
-                </ul>
-            </div>
-            <div class="information">
-                <h2>Products Categories</h2>
-                <ul>
-                    <li><a href="#">Individual Plans</a></li>
-                    <li><a href="#">Business Plans</a></li>
-                    <li><a href="#">Free Trial</a></li>
-                    <li><a href="#">Academic</a></li>
-                </ul>
-            </div>
-            <div class="information">
-                <h2>Browse by Categories</h2>
-                <ul>
-                    <li><a href="#">All Courses</a></li>
-                    <li><a href="#">All Instructors</a></li>
-                    <li><a href="#">All Members</a></li>
-                    <li><a href="#">All Groups</a></li>
+                    <li><a href="#">Frontend - development</a></li>
+                    <li><a href="#">Backend - development</a></li>
+                    <li><a href="#">QA - Engineer</a></li>
                 </ul>
             </div>
             <div class="information">

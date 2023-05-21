@@ -55,7 +55,7 @@ function next() {
 
     }
 
-    qweqwe();
+    //qweqwe();
 }
 
 function previous() {
@@ -98,18 +98,90 @@ function open() {
     document.getElementById('list').style.Right = "0";
 }
 
-console.log(window. innerWidth)
+// if (window.pageYOffset == 0) {
 
-// if (window. innerWidth < 900) {
-//     document.querySelector('nav').innerHTML = `
-//             <div id="menu" onclick=open()>
-//                 <img class="lines" src="img/lines.png">
-//                 <ul id="list">
-//                     <li><a href="#">Home</a></li>
-//                     <li><a href="#">About</a></li>
-//                     <li><a href="#">Info</a></li>
-//                     <li><a href="#">Contact</a></li>
-//                 </ul>
-//            </div>`;
-// }
+//     console.log(window.pageYOffset)
+//     document.querySelector(".menu").style.backgroundColor = "none";
+//     let elems = document.getElementsByClassName("option")
+//     for (let i = 0; i < elems.length; i++) {
+//         elems[i].style.color = "white";
+//     }
 
+//     let span = document.querySelectorAll('span');
+//     for (let i = 0; i < elems.length; i++) {
+//         span[i].style.color = "white";
+//     }
+
+//     document.querySelector(".menu").style.zIndex = "2";
+
+//   } else {
+
+//     document.querySelector(".menu").style.backgroundColor = "white";
+//     let elems = document.getElementsByClassName("option")
+//     for (let i = 0; i < elems.length; i++) {
+//         elems[i].style.color = "black";
+//     }
+
+//     let span = document.querySelectorAll('span');
+//     for (let i = 0; i < elems.length; i++) {
+//         span[i].style.color = "black";
+//     }
+
+//     document.querySelector(".menu").style.zIndex = "2";
+//   }
+
+
+
+
+window.addEventListener('scroll', function () {
+
+    let posTop = window.pageYOffset;
+
+    if (posTop == 0) {
+
+        document.querySelector(".menu").style.backgroundColor = "transparent";
+        let elems = document.getElementsByClassName("option")
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].style.color = "white";
+
+            elems[i].addEventListener("mouseenter", function() {
+                elems[i].style.color = "#3d84e6";
+            });
+
+            elems[i].addEventListener("mouseleave", function() {
+                elems[i].style.color = "white";
+            });
+        }
+
+        let span = document.querySelectorAll('span');
+        for (let i = 0; i < elems.length; i++) {
+            span[i].style.color = "white";
+        }
+
+        document.querySelector(".menu").style.zIndex = "2";
+
+    } else {
+        document.querySelector(".menu").style.backgroundColor = "white";
+        let elems = document.getElementsByClassName("option")
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].style.color = "black";
+
+            elems[i].addEventListener("mouseenter", function() {
+                elems[i].style.color = "#3d84e6";
+            });
+
+            elems[i].addEventListener("mouseleave", function() {
+                elems[i].style.color = "black";
+            });
+        }
+
+        let span = document.querySelectorAll('span');
+        for (let i = 0; i < elems.length; i++) {
+            span[i].style.color = "black";
+        }
+
+        document.querySelector(".menu").style.zIndex = "2";
+    }
+
+
+  });
