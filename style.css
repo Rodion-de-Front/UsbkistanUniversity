@@ -248,6 +248,10 @@ nav a:hover:after {
     padding: 15px;
 }
 
+.title {
+    text-align: center;
+}
+
 .classes {
     margin-top: 30px;
 }
@@ -327,6 +331,7 @@ nav a:hover:after {
     position: relative;
     text-align: center;
     word-spacing: 40px;
+    padding: 10px;
     background-color: #0f0e0f;
   }
 
