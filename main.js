@@ -9,17 +9,10 @@ function qweqwe() {
 
     qweqwe = setInterval(function() {
         next();
-    }, 3000);
+    }, 7000);
 }
 
 qweqwe();
-
-
-// let timer = setInterval(function(){
-
-//     next();
-
-// }, 3000);
 
 function next() {
 
@@ -54,8 +47,6 @@ function next() {
         }
 
     }
-
-    //qweqwe();
 }
 
 function previous() {
@@ -93,45 +84,14 @@ function previous() {
     }
 }
 
-function open() {
-    alert('sdvsv')
-    document.getElementById('list').style.Right = "0";
+//функция чтобы открыть и спрятать меню
+function toggleMenu() {
+
+    document.getElementById('sidebar').classList.toggle('sidebar-active')
+    document.getElementById('lines').classList.toggle('lines-active');
+
+
 }
-
-// if (window.pageYOffset == 0) {
-
-//     console.log(window.pageYOffset)
-//     document.querySelector(".menu").style.backgroundColor = "none";
-//     let elems = document.getElementsByClassName("option")
-//     for (let i = 0; i < elems.length; i++) {
-//         elems[i].style.color = "white";
-//     }
-
-//     let span = document.querySelectorAll('span');
-//     for (let i = 0; i < elems.length; i++) {
-//         span[i].style.color = "white";
-//     }
-
-//     document.querySelector(".menu").style.zIndex = "2";
-
-//   } else {
-
-//     document.querySelector(".menu").style.backgroundColor = "white";
-//     let elems = document.getElementsByClassName("option")
-//     for (let i = 0; i < elems.length; i++) {
-//         elems[i].style.color = "black";
-//     }
-
-//     let span = document.querySelectorAll('span');
-//     for (let i = 0; i < elems.length; i++) {
-//         span[i].style.color = "black";
-//     }
-
-//     document.querySelector(".menu").style.zIndex = "2";
-//   }
-
-
-
 
 window.addEventListener('scroll', function () {
 
@@ -185,3 +145,18 @@ window.addEventListener('scroll', function () {
 
 
   });
+
+  console.log(window.innerWidth)
+
+  if (window.innerWidth < 800) {
+    document.querySelector('nav').innerHTML = `
+                                    <img id="lines" src="img/lines.png"/ onclick="toggleMenu()">
+                                    <div id="sidebar">
+                                        <strong><a class="menu-item" href="#container">HOME</a></strong>
+                                        <strong><a class="menu-item" href="#INFO">INFO</a></strong>
+                                        <strong><a class="menu-item" href="#Gallery">GALLERY</a></strong>
+                                        <strong><a class="menu-item" href="#Classes">CLASSES</a></strong>
+                                        <strong><a class="menu-item" href="#Partners">PARTNERS</a></strong>
+                                        </div>
+                                    </div>`
+  }
