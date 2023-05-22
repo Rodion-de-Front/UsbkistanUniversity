@@ -157,7 +157,7 @@ window.addEventListener('scroll', function () {
                                         <strong><a class="menu-item" href="#Gallery">GALLERY</a></strong>
                                         <strong><a class="menu-item" href="#Classes">CLASSES</a></strong>
                                         <strong><a class="menu-item" href="#Partners">PARTNERS</a></strong>
-                                        <strong><a class="option" href="#Contact">CONTACT</a></strong>
+                                        <strong><a class="menu-item" href="#Contact">CONTACT</a></strong>
                                         </div>
                                     </div>`
   }
