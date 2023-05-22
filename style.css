@@ -147,7 +147,7 @@ html {
 .logo {
     display: inline-block;
     margin-left: 80px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .logo img {
@@ -430,7 +430,7 @@ nav a:hover:after {
   nav img {
     width: 30px;
     height: 30px;
-    z-index: 2;
+    z-index: 3;
   }
 
   #sidebar {
@@ -450,7 +450,7 @@ nav a:hover:after {
 
 .menu-item {
     position: relative;
-    top: 7%;
+    top: 60px;
     display: block;
     text-decoration: none;
     padding: 15px;
