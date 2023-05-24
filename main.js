@@ -154,6 +154,7 @@ window.addEventListener('scroll', function () {
                                     <div id="sidebar">
                                         <strong><a class="menu-item" href="#container">HOME</a></strong>
                                         <strong><a class="menu-item" href="#INFO">INFO</a></strong>
+                                        <strong><a class="menu-item" href="#About">ABOUT</a></strong>
                                         <strong><a class="menu-item" href="#Gallery">GALLERY</a></strong>
                                         <strong><a class="menu-item" href="#Classes">CLASSES</a></strong>
                                         <strong><a class="menu-item" href="#Partners">PARTNERS</a></strong>
