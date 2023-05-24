@@ -315,10 +315,10 @@ nav a:hover:after {
 }
 
 .about-box-text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
-    width: 600px;
-    margin-right: 30px;
+    width: 800px;
+    display: inline-block;
 }
 
 .about-box-offers h2 {
@@ -326,11 +326,18 @@ nav a:hover:after {
 }
 
 .row-about {
-    margin-top: 40px;
+    text-align: center;
+}
+
+.list {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+}
+
+.list ul {
+    display: inline-block;
+    width: 360px;
 }
 
 .list li {
@@ -547,11 +554,10 @@ nav a:hover:after {
 
     .about-box-text {
         width: 300px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .about-box-offers {
-        width: 300px;
         font-size: 15px;
     }
 
