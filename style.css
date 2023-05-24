@@ -286,6 +286,7 @@ nav a:hover:after {
 
 .title {
     text-align: center;
+    line-height: 35px;
 }
 
 .classes {
@@ -329,6 +330,7 @@ nav a:hover:after {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .list li {
@@ -541,6 +543,16 @@ nav a:hover:after {
     word-spacing: 30px;
     padding: 10px;
     background-color: #0f0e0f;
+    }
+
+    .about-box-text {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .about-box-offers {
+        width: 300px;
+        font-size: 15px;
     }
 
 }
